@@ -296,7 +296,7 @@ def count_cosines_from(m, n, x):
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
     b = 0
-    for k in range (m,n):
+    for k in range (n-m+1):
         w = math.cos(m+k)
         if w < x:
             b = b + 0
